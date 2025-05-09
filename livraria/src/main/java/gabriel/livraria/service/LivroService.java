@@ -2,8 +2,6 @@ package gabriel.livraria.service;
 
 import java.util.List;
 
-import javax.swing.Spring;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
