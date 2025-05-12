@@ -21,7 +21,7 @@ public class LivroController {
 	@Autowired
 	private LivroService service;
 
-	@GetMapping
+	@GetMapping("/id")
 	public List<Livro> listar() {
 		List<Livro> livros = service.listar();
 		return livros;
