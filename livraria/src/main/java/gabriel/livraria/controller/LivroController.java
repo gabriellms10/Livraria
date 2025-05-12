@@ -21,12 +21,12 @@ public class LivroController {
 	@Autowired
 	private LivroService service;
 
-	@GetMapping("/id")
+	@GetMapping
 	public List<Livro> listar() {
 		List<Livro> livros = service.listar();
 		return livros;
 	}
-
+	@GetMapping("/{id}")
 	public ResponseEntity<Livro> buscar(@PathVariable Long id) {
 
 		try {
